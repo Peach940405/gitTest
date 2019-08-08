@@ -38,7 +38,6 @@ public class Solution8191_만화책정렬하기 {
     static int N, answer;
 
     public static void main(String[] args) throws IOException {
-        System.setIn(new FileInputStream("res/swea/input8191.txt"));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
 
