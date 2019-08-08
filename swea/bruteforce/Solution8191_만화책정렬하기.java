@@ -6,9 +6,8 @@
  * https://www.swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWwtYmX6hvsDFAWU&categoryId=AWwtYmX6hvsDFAWU&categoryType=CODE
  *
  * @문제
- * 8191. 만화책 정렬하기 D5
+ * swea 8191. 만화책 정렬하기 D5
  *
- * @설명
  * 만화책들이 종류의 순서가 엉망이 되어있다.
  * 순서대로 정렬해서 아래쪽에 꽂기 위해서 책들을 왼쪽에서 오른쪽으로 훑으며
  * 1권이 나오면 아래쪽으로 옮기고, 2권이 나오면 아래쪽으로 옮기고, ..를 원하는 책이 나올 때 마다 순서대로 반복한다.
