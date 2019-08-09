@@ -70,7 +70,6 @@ public class Main2042_구간합구하기 {
     }
 
     public static void main(String[] args) throws IOException {
-        System.setIn(new FileInputStream("res/boj/input2042.txt"));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
 
@@ -101,7 +100,6 @@ public class Main2042_구간합구하기 {
                     break;
                 case SUM:
                     System.out.println(sum(1, 0, N - 1, b - 1, c - 1));
-
             }
         }
         br.close();
