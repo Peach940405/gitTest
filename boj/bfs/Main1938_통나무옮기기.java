@@ -28,7 +28,7 @@
  * 5. EEE에 도착했을 때 answer에 답을 넣어 출력해주자.
  *
  */
-
+package algo.bfs;
 
 import java.io.*;
 import java.util.*;
@@ -150,24 +150,17 @@ public class Main1938_통나무옮기기 {
 
                 // 4)
                 // 회전 가능한지 체크
-                if (shape == ROW) { // 통나무가 가로 모양
-                    if (!visited[r][c][HI] && isTurn(r, c, ROW)) { // 회전할 수 있다면
-                        // 세로로 회전시키자.
-                        visited[r][c][HI] = true;
-                        q.offer(new int[]{r, c, HI});
-                    }
-                } else { // 통나무가 세로 모양
-                    if (!visited[r][c][ROW] && isTurn(r, c, HI)) { // 회전할 수 있다면
-                        // 가로로 회전시키자.
-                        visited[r][c][ROW] = true;
-                        q.offer(new int[]{r, c, ROW});
-                    }
+                int curShape = shape;
+                if (!visited[r][c][(curShape + 1) % 2] && isTurn(r, c, curShape)) { // 회전할 수 있다면
+                    visited[r][c][(curShape + 1) % 2] = true;
+                    q.offer(new int[]{r, c, (curShape + 1) % 2});
                 }
             }
         }
     }
 
     public static void main(String[] args) throws IOException {
+        System.setIn(new FileInputStream("res/input1938.txt"));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
 
