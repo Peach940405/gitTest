@@ -137,7 +137,6 @@ public class Main17406_배열돌리기4 {
     }
 
     public static void main(String[] args) throws IOException {
-        System.setIn(new FileInputStream("res/boj/input17406.txt"));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
 
