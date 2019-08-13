@@ -99,7 +99,6 @@ public class Main3190_뱀 {
     }
 
     public static void main(String[] args) throws IOException {
-        System.setIn(new FileInputStream("res/boj/input3190.txt"));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
 
